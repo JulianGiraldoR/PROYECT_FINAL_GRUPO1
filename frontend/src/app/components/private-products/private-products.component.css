@@ -1,0 +1,133 @@
+
+  .contact_form{ 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background: -webkit-linear-gradient(to right, #0f0f10,#290b17,#4a0e38, #5b105b);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #252529, #5a3b5a, #290b17, #7e1a60); 
+    padding-left: 30px;
+    font-family: 'Noto Sans', sans-serif; 
+    
+  }
+  
+  
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: hwb(187 8% 17%); 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #446dab; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background: linear-gradient(to right, #d4d4dc, #5a3b5a, #5a3b5a, #cfc3cb);
+    border-color: black; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+    color: #fff; 
+  }
+  
+  
+  span{
+    color: white; 
+    font-size: 20px;
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: white;  
+  }
+  
+  
+  h1{
+    font-size: 39px;  
+    text-align: center; 
+    padding-bottom: 20px; 
+    color:white;
+    
+  }
+  
+  
+  h3{
+    font-size: 21px; 
+    text-align: center;
+    padding-bottom: 30px;
+    color:white;   
+  }
+  
+  
+  p{
+    font-size: 14px; 
+    color: white; 
+    font-size: 20px;
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }

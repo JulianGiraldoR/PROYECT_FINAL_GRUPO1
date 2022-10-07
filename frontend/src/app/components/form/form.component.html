@@ -1,0 +1,51 @@
+<section class="h-100 gradient-form">
+  
+<div class="contact_form">
+    <div class="formulario">      
+      <h1>Team Gourmet quiere conocerte</h1>
+        <h3>Team Gourmet te lleva mas cerca del sabor</h3>
+          <form (submit)="form()" >       
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" [(ngModel)]="contactForm.name" name="name" class="form-control" placeholder="Name" required autofocus>
+                </p>             
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" [(ngModel)]="contactForm.email" name="email" class="form-control" placeholder="Email" required>
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" [(ngModel)]="contactForm.cellNumber" name="cellNumber" class="form-control" placeholder="cellNumber" required>
+                </p>                    
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" [(ngModel)]="contactForm.subject" name="subject" class="form-control" placeholder="Subject" required>
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                        <textarea type="text" [(ngModel)]="contactForm.text" name="Text" class="form-control" placeholder="Text" required></textarea> 
+                    </p>                    
+              
+                <button class="btn btn-primary btn-block">
+                  Enviar Formulario
+                </button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+</section>

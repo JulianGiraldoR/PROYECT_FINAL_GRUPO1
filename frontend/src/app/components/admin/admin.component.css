@@ -1,0 +1,42 @@
+
+
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  h1 {
+    color: rgb(12, 11, 11);
+    font-family: arial;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 1rem;
+    text-shadow: 0 0 3px rgb(13, 13, 13);
+  }
+  h4 {
+    color: #090909;
+    font-family: arial;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .button {
+    display: block;
+    margin: 20px 0 0;
+    padding: 15px 30px;
+    background:  rgb(154, 152, 137);
+    color: rgb(6, 6, 6);
+    font-family: arial;
+    letter-spacing: 5px;
+    border-radius: .4rem;
+    text-decoration: none;
+    box-shadow: 0 0 15px #5b5c6b;
+  }

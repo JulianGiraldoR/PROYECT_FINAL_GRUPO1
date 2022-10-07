@@ -1,0 +1,49 @@
+<div class="row d-flex justify-content-center align-items-center h-100">
+<div class="contact_form">>
+<div class="formulario"> 
+  <h1>Formulario creacion de Productos</h1>
+<form (submit)="privateProduct()" >       
+    <p>
+      <label for="titulo" class="colocar_nombre">titulo
+        <span class="obligatorio">*</span>
+      </label>
+        <input type="text" [(ngModel)]="product.title" name="titulo" class="form-control" placeholder="titulo" required>
+    </p>
+    <p>
+      <label for="descripcion" class="colocar_nombre">descripcion
+        <span class="obligatorio">*</span>
+      </label>
+        <textarea type="text" [(ngModel)]="product.description" name="descripcion" class="form-control" placeholder="descripcion" required></textarea>
+    </p>
+    <p>
+      <label for="categoria" class="colocar_nombre">Categoria
+        <span class="obligatorio">*</span>
+      </label>
+        <input type="text" [(ngModel)]="product.category" name="categoria" class="form-control" placeholder="categoria" required>
+    </p>  
+    <p>
+      <label for="origen" class="colocar_nombre">Origen
+        <span class="obligatorio">*</span>
+      </label>
+        <input type="text" [(ngModel)]="product.origin" name="origen" class="form-control" placeholder="origen" required>
+    </p> 
+    <p>
+      <label for="ingredientes" class="colocar_nombre">Ingredientes
+        <span class="obligatorio">*</span>
+      </label>
+        <textarea type="text" [(ngModel)]="product.ingredients" name="ingredientes" class="form-control" placeholder="ingredientes" required></textarea>
+    </p> 
+    <p>
+      <label for="imgUrl" class="colocar_nombre">ImgUrl
+        <span class="obligatorio">*</span>
+      </label>
+        <input type="text" [(ngModel)]="product.imgUrl" name="imgUrl" class="form-control" placeholder="imgUrl" required>
+    </p>
+               
+                    
+  
+    <button class="btn btn-primary btn-block">
+      Enviar
+    </button>  
+</form>
+</div>
