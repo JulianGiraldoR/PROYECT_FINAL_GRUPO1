@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "236985c8-d175-4563-be1a-f696f4ece5da",
+		"name": "CRUD products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18326059"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3002/api/products/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"title\":\"Vino Tinto Las Moras Reserva Malbec\",\r\n    \"description\":\"El vino tinto las Moras es un vino argentino que viene en botella de 750 ML. El tipo de uva es 100% Malbec. ¡Disfruta de una copa de un vino Malbec con una buena compañía! Debe consumirse a una temperatura de 16 a 18° C.\",\r\n    \"origin\":\"Argentina\",\r\n    \"category\":\"vinos\",\r\n    \"ingredients\":\"Malbec\",\r\n\r\n    \"imgUrl\":\"Vino Tinto Las Moras Reserva Malbec.png\"\r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3002/api/products/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3002/api/products/6335327e6dfe0bdd9fa4a485",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"products",
+						"6335327e6dfe0bdd9fa4a485"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imgUrl\":\"lechona.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3002/api/products/63364de25175c12bfdf11b9f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"products",
+						"63364de25175c12bfdf11b9f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

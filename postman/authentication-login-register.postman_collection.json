@@ -46,7 +46,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"prueba\",\r\n    \"email\":\"prueba5@gmail.com\",\r\n\r\n    \"password\":\"123456767\"\r\n}",
+					"raw": "{\r\n    \"name\":\"prueba6\",\r\n    \"email\":\"prueba56@gmail.com\",\r\n    \"password\":\"123456767\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
