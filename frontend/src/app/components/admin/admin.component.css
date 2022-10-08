@@ -14,28 +14,28 @@
    
     
    
-   
-   
   }
   h1 {
-    color: rgb(12, 11, 11);
+    color: rgb(11, 12, 11);
     font-family: arial;
     font-weight: bold;
     font-size: 50px;
     letter-spacing: 5px;
     line-height: 1rem;
-    text-shadow: 0 0 3px rgb(13, 13, 13);
+    text-shadow: 0 0 3px rgb(248, 244, 244);
   }
   .button {
 
     display: flex;
     margin: 20px;
     padding: 15px 30px;
-    background:  rgb(154, 152, 137);
+    background:  rgb(211, 167, 227);
     color: rgb(6, 6, 6);
     font-family: arial;
     letter-spacing: 5px;
     border-radius: .4rem;
     text-decoration: none;
     box-shadow: 0 0 15px #5b5c6b;
+    
   }
+  
