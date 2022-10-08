@@ -12,6 +12,7 @@ import { MainSectionComponent } from './components/main-section/main-section.com
 import {AuthGuard} from './auth.guard'
 import { FormComponent } from './components/form/form.component';
 import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,10 @@ const routes: Routes = [
   path:'admin',
   component:AdminComponent,
   canActivate:[AuthGuard]
+},
+{
+  path:'footer',
+  component:FooterComponent
 }
 
 ];
