@@ -1,18 +1,23 @@
-
-<div class="card">
-  <div class="row g-0">
-    <div class="col-md-4">
-        <img [src]="product.imgUrl" class="card-img-top p-3" alt="Product image" onError="this.src='../../assets/images/default.jpg'"> 
-   </div>
-   <div class="col-md-8">
-    <div class="card-body">
-        <h5 class="card-title" >{{product.title}}</h5>
-        <p class="card-text">DESCRIPCION:{{product.description}}</p> 
-        <h5 class="list-group-item ">CATEGORIA:{{product.category}}</h5>
-        <h5 class="list-group-item">ORIGEN:{{product.origin}}</h5>
-        <p class="list-group-item">INGREDIENTES{{product.ingredients}}</p>     
-      </div>
-    </div>
+<div class="container">
+  <div class="card">  
+<div class="card" style="width: 20rem;   ">
+  <div class="card-header">
+    <h5 class="card-title" >{{product.title}}</h5>
+  </div>
+  <img [src]="product.imgUrl" class="card-img-top" alt="Product image" onError="this.src='../../assets/images/default.jpg'"> 
+  <div class="card-body">
+    
+    <p class="card-text">DESCRIPCION:{{product.description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <h5 class="list-group-item ">CATEGORIA:{{product.category}}</h5>
+    <h5 class="list-group-item">ORIGEN:{{product.origin}}</h5>
+    <p class="list-group-item">INGREDIENTES:{{product.ingredients}}</p> 
+  </ul>
+  <div class="card-footer">
+    © 2022 Copyright:
   </div>
 </div>
-   
+</div>
+</div>
+ 

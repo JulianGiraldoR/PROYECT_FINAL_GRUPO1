@@ -1,11 +1,13 @@
 
+
+
 .hero {
   background: linear-gradient(#020202,#3d0c49,#16091c,#282834) ;
-    
-    width: 100%;
-    background-size: cover;
+    display: flex;
+   height: 100%;
+   width: 100%;
     position: relative;
-    min-height: 60vh;
+    min-height: 100vh;
     padding: 160px 0 60px 0;
   }
   
@@ -14,6 +16,7 @@
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 20px;
+    
   }
   
   .hero h2 span {
@@ -42,9 +45,6 @@
   .hero .btn-book-a-table:hover {
     background: rgba(92, 45, 104, 0.8);
   }
- 
-  
-
   
  
   
