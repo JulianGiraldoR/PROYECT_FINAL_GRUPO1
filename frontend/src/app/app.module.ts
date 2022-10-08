@@ -16,6 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { MainSectionComponent } from './components/main-section/main-section.component';
 import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -32,6 +33,7 @@ import { HomeComponent } from './components/home/home.component';
     AdminComponent,
     MainSectionComponent,
     HomeComponent,
+    FooterComponent,
    
   ],
   imports: [
