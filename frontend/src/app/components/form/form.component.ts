@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {FormService} from '../../services/form.service'
+import {FormsService} from '../../services/form.service'
 import {Router} from '@angular/router'
+import { Component, Input, OnInit ,Output,EventEmitter} from '@angular/core';
 
 
 @Component({
@@ -11,23 +11,23 @@ import {Router} from '@angular/router'
 export class FormComponent implements OnInit {
 
   contactForm = {
-    name:'',
-    email:'',
-    cellNumber:'',
-    subject:'',
-    text:''
+    name:"",
+    email:"",
+    cellNumber:"",
+    subject:"",
+    text:"",
   }
 
   constructor(
-    private FormService:FormService,
+    private FormsService:FormsService,
     private router:Router,
   ) { }
 
   ngOnInit(): void {
   }
 
-  form(){
-    this.FormService.form(this.contactForm)
+  forms(){
+    this.FormsService.forms(this.contactForm)
     .subscribe(
       res =>{
         console.log(res)

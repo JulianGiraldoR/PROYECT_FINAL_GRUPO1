@@ -17,6 +17,10 @@ import { AdminComponent } from './components/admin/admin.component';
 import { MainSectionComponent } from './components/main-section/main-section.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AdminFormsComponent } from './components/admin-form/admin-form.component';
+import { FormSectionComponent } from './components/form-section/form-section.component';
+
+
 
 
 
@@ -34,6 +38,11 @@ import { FooterComponent } from './components/footer/footer.component';
     MainSectionComponent,
     HomeComponent,
     FooterComponent,
+    AdminFormsComponent,
+    FormSectionComponent,
+ 
+    
+   
    
   ],
   imports: [

@@ -2,17 +2,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 //components
-import{ProductsComponent} from './components/products/products.component'
+import {FormSectionComponent} from './components/form-section/form-section.component'
 import{PrivateProductsComponent} from './components/private-products/private-products.component'
 import{LoginComponent} from './components/login/login.component'
 import{RegisterComponent} from './components/register/register.component'
 import { AdminComponent } from './components/admin/admin.component';
 import { MainSectionComponent } from './components/main-section/main-section.component';
-
 import {AuthGuard} from './auth.guard'
 import { FormComponent } from './components/form/form.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+
+
 
 const routes: Routes = [
   {
@@ -23,7 +24,11 @@ const routes: Routes = [
   {
     path:'products',
     component:MainSectionComponent,
-    canActivate:[AuthGuard]
+   
+  },
+  {
+  path:'admin-form',
+  component:FormSectionComponent,
   },
   {
     path:'private',
@@ -33,6 +38,7 @@ const routes: Routes = [
   {
     path:'form',
     component:FormComponent,
+    canActivate:[AuthGuard]
    
   },
   {
@@ -56,7 +62,6 @@ const routes: Routes = [
   path:'footer',
   component:FooterComponent
 }
-
 ];
 
 @NgModule({

@@ -2,10 +2,13 @@ import { Injectable } from '@angular/core';
 import{HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router'
 
+
+
+
 @Injectable({
   providedIn: 'root'
 })
-export class FormService {
+export class FormsService {
 
   private URL = 'http://localhost:3002/api'
 
@@ -17,8 +20,8 @@ export class FormService {
     
   }
   
-  form(Form:any){
+  forms(Form:any){
     return this.http.post<any>(this.URL + '/forms',Form);
   }
-  }
+}
 

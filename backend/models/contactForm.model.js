@@ -10,7 +10,7 @@ const contactFormSchema =  new mongoose.Schema({
     required: true,  
   },
   cellNumber: {
-    type: Number,
+    type: String,
     required: true,
     
   },
@@ -24,7 +24,7 @@ const contactFormSchema =  new mongoose.Schema({
     required: true,
   }
   
-},{timestamps: true,
+},{
   versionKey:false}
    // You should be aware of the outcome after set to false
 );

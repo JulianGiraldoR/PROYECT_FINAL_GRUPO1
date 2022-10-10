@@ -1,7 +1,7 @@
 main{
     display: flex;
     flex-direction: column;
-    background:linear-gradient(rgb(47, 46, 46),grey,rgb(47, 44, 44),grey);
+    
   }
   
   .productCardContainer{
@@ -10,6 +10,8 @@ main{
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    max-width: auto;
+    min-width: auto;
   }
 
 .title{
