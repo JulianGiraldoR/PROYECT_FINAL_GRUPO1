@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 //components
 import {FormSectionComponent} from './components/form-section/form-section.component'
 import{PrivateProductsComponent} from './components/private-products/private-products.component'
+import{AdminSectionComponent} from './components/admin-section/admin-section.component'
 import{LoginComponent} from './components/login/login.component'
 import{RegisterComponent} from './components/register/register.component'
 import { AdminComponent } from './components/admin/admin.component';
@@ -24,11 +25,19 @@ const routes: Routes = [
   {
     path:'products',
     component:MainSectionComponent,
+    canActivate:[AuthGuard]
    
+  },
+  {
+    path:'users',
+    component:AdminSectionComponent,
+    canActivate:[AuthGuard]
+
   },
   {
   path:'admin-form',
   component:FormSectionComponent,
+  canActivate:[AuthGuard]
   },
   {
     path:'private',
