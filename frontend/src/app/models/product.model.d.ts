@@ -6,5 +6,6 @@ export interface Product {
     category:string;
     origin:string;
     ingredients:string;
-    imgUrl:string
+    imgUrl:string;
+    preparation:string;
 }

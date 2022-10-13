@@ -15,7 +15,8 @@ export class PrivateProductsComponent implements OnInit {
     category:'',
     origin:'',
     ingredients:'',
-    imgUrl:''
+    imgUrl:'',
+    preparation:''
   }
 
   constructor(

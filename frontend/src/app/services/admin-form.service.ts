@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Form } from '../models/form.model';
+import { Observable } from 'rxjs';
 
 interface getformData{
   contactForms:Form[];
@@ -18,4 +19,15 @@ export class AdminFormsService {
   getForms(){
     return this.http.get<getformData>('http://127.0.0.1:3002/api/forms/')
   }
+
+ deleteForm(contactForms:Form):Observable<getformData>{
+  let Option = {
+    headers:new HttpHeaders({
+      'Content-type':'application/json'
+    }),
+    body:contactForms
+  }
+  
+  return this.http.delete<getformData>('http://127.0.0.1:3002/api/forms/',Option)
+ }
 }

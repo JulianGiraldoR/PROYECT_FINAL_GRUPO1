@@ -28,6 +28,10 @@ const productSchema =  new mongoose.Schema({
   imgUrl: {
     type: String ,
     required: false,
+  },
+  preparation: {
+    type: String ,
+    required: false,
   }
  
 },{versionKey:false})

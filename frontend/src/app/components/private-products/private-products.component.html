@@ -34,6 +34,13 @@
         <textarea type="text" [(ngModel)]="product.ingredients" name="ingredientes" class="form-control" placeholder="ingredientes" required></textarea>
     </p> 
     <p>
+      <label for="ingredientes" class="colocar_nombre">Preparacion
+        <span class="obligatorio">*</span>
+      </label>
+        <textarea type="text" [(ngModel)]="product.preparation" name="Preparacion"class="form-control" placeholder="ingredientes" required></textarea>
+    </p>
+    
+    <p>
       <label for="imgUrl" class="colocar_nombre">ImgUrl
         <span class="obligatorio">*</span>
       </label>

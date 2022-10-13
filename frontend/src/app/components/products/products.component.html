@@ -1,23 +1,28 @@
-
-<div class="container p-3 ">
-  <div class="card">  
-<div class="card" style="width: 35rem; height:35rem">
-  <div class="card-header">
-    <h5 class="card-title" >{{product.category}}</h5>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="products.component.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+  
   <div class="container">
-  <div class="tamaño">
-  <img [src]="product.imgUrl" class="img" style="text-align: center;"  alt="Product image" onError="this.src='../../assets/images/default.jpg'"> 
-</div>
-  <h5 class="card-title" >Nombre: {{product.title}}</h5>
-  <h5 class="card-title" >Origen:{{product.origin}}</h5>
-  <h5 class="ingredients">Ingredientes:{{product.ingredients}}</h5>
-
-</div>
-  <a href="/form" class="btn btn-primary" >Mas Informacion</a>
-
- 
-</div>
-</div>
-</div>
- 
+     
+    <div class="container">
+       
+      <div class="card">
+          <div class="h2">{{product.title}}</div>
+          <img [src]="product.imgUrl" onError="this.src='../../assets/images/default.jpg'">
+          <h2 class="card-title">Categoria: {{product.category}}</h2>
+          <h5 class="card-title">Origen: {{product.origin}}</h5>
+          <h5>ingredientes</h5>
+          <p>{{product.ingredients}}</p>
+          <h5>Preparacion</h5>
+          <p>{{product.preparation}}</p>
+          <a href="/form" class="btn" >Danos tu opinion</a>
+      </div>
+    </div>
+    </div>
+</body>

@@ -18,6 +18,7 @@ export class ProductsComponent implements OnInit {
     origin:"",
     ingredients:"",
     imgUrl:"",
+    preparation:"",
   }
 
   @Output() productAdded = new EventEmitter<Product>()

@@ -1,5 +1,7 @@
 import { Component,Input, OnInit,Output,EventEmitter } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Form } from '../../models/form.model';
+import {AdminFormsService} from '../../services/admin-form.service'
 
 @Component({
   selector: 'app-admin-form',
@@ -26,6 +28,8 @@ export class AdminFormsComponent implements OnInit {
   ngOnInit(): void {
    
     
-  }
+    }
+    
+
 
 }
